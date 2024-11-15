@@ -1,0 +1,31 @@
+Specifications (should meet SMART criteria)
+
+A CRUD application for the existing intranet is to be created. The upcoming trips should be available to choose from.
+
+The standard user can see the public page and apply for the chosen upcoming trip.
+
+The admin can create, change, delete, and read trips, upcoming trips, and clients, and can read and delete applicants. 
+Other functions for the applicants table are not provided. Trips and upcoming trips may not be deleted as long as they are still in the upcoming trips table or applicants table.
+
+The project is to be completed in 2 weeks.
+
+The existing app is used to log in.
+
+
+
+Functional Requirements
+
+All data, trips, upcoming trips, clients, and applicants are kept in an SQL database.
+
+The standard user only sees the public page, the admin sees all the data (see use case diagram).
+
+Views:
+
+Create list.php and form.php for the 3 base classes Trip, Upcoming Trip, and Clients.
+
+Create list.php for the class Applicants and public.php for the user.
+
+All objects should be insertable, readable, editable, and deletable, except applicants - only readable and deletable. The FK constraint must be observed. 
+The controllers should call the respective methods. If the user makes an incorrect entry, a message is issued.
+
+Two different user roles are implemented: the user and the administrator. The latter can trigger all events, the user only interacts with the public page.

@@ -1,0 +1,33 @@
+Spezifikationen (sollten SMART-Kriterien erfüllen):
+
+Eine CRUD-Anwendung für das bestehende Intranet soll erstellt werden. Die kommenden Ausflüge sollten zur Auswahl bereitstehen.
+
+Der Standardbenutzer kann die öffentliche Seite sehen und sich für die ausgewählte kommende Ausflug bewerben.
+
+Der Administrator kann Ausflüge, kommende Ausflug und Kunden erstellen, ändern, löschen und lesen sowie Bewerber lesen und löschen.
+Andere Funktionen für die Tabelle der Bewerber sind nicht vorgesehen. Ausflüge und kommende Ausflüge dürfen nicht gelöscht werden,
+solange sie noch in der Tabelle der kommenden Ausflüge oder der Bewerber enthalten sind.
+
+Das Projekt soll in 2 Wochen abgeschlossen werden.
+
+Die bestehende App wird verwendet, um sich anzumelden.
+
+
+Funktionale Anforderungen:
+
+Alle Daten, Ausflüge, kommende Ausflüge, Kunden und Bewerber werden in einer SQL-Datenbank gespeichert.
+
+Der Standardbenutzer sieht nur die öffentliche Seite, der Administrator sieht alle Daten (siehe Use-Case-Diagramm).
+
+Ansichten:
+
+Erstelle list.php und form.php für die 3 Basisklassen Ausflüge, kommende Ausflüge und Kunden.
+
+Erstelle list.php für die Klasse Bewerber und public.php für den Benutzer.
+
+Alle Objekte sollten einfügbar, lesbar, editierbar und löschbar sein, außer Bewerber - nur lesbar und löschbar.
+Der FK-Constraint muss beachtet werden. Die Controller sollten die jeweiligen Methoden aufrufen.
+Wenn der Admin eine falsche Eingabe macht, wird eine Nachricht ausgegeben.
+
+Es werden zwei verschiedene Benutzerrollen implementiert: der Benutzer und der Administrator.
+Letzterer kann alle Ereignisse auslösen, der Benutzer interagiert nur mit der öffentlichen Seite.

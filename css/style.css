@@ -1,0 +1,47 @@
+body{
+    background-color: #f4f4f4;
+}
+/* Full-width button style */
+.btn-join {
+    background-color: #03c03c; /* Custom green color */
+    color: #fff;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+.btn-join:hover {
+    background-color: #16a34a;
+    color: #fff;
+}
+/* Uniform card height */
+.card {
+    height: 100%;
+}
+/* Light background for date and available places */
+.card-text.bg-light {
+    background-color: #E0E7FF;
+    font-weight: bold;
+}
+.card-title {
+    font-weight: bold;
+    text-align: center;
+}
+/* Footer background */
+.footer {
+    background-color: #f8f9fa; /* Light gray */
+    border-top: 1px solid #dee2e6; /* Subtle top border */
+}
+
+/* Text color */
+.footer p {
+    color: #6c757d; /* Muted dark gray */
+}
+
+/* Icon color and hover effect */
+.footer-icon i {
+    transition: color 0.3s;
+}
+
+.footer-icon i:hover {
+    color: #28a745; /* Light green hover */
+}
